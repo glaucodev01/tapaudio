@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapAudio - O áudio de qualquer vídeo, em qualquer lugar.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4F46E5, #A855F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .feature-card {
+            background-color: #1E1E1E;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="fas fa-headphones-simple text-3xl text-indigo-500"></i>
+                <h1 class="text-2xl font-bold ml-3">TapAudio</h1>
+            </div>
+            <a href="#download" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                Baixar Agora
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6 text-center pt-20 pb-24">
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            O áudio de qualquer vídeo.
+            <br>
+            <span class="gradient-text">Com a tela desligada.</span>
+        </h2>
+        <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+            Cansado de não poder ouvir suas palestras, podcasts ou músicas favoritas enquanto usa outros apps? O TapAudio liberta o som.
+        </p>
+        <div class="mt-8">
+            <a href="https://play.google.com/store/apps/details?id=net.glaucomv.tapaudio" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
+                <i class="fab fa-google-play mr-2"></i> Baixar na Google Play
+            </a>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-[#181818]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold">Simples, mas poderoso.</h3>
+                <p class="text-gray-400 mt-2">Recursos pensados para sua rotina.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Background Play -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-power-off text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Tela Desligada, Som Ligado</h4>
+                    <p class="text-gray-400">Coloque o celular no bolso e continue ouvindo. Perfeito para caminhadas, academia ou para economizar bateria.</p>
+                </div>
+                <!-- Feature 2: Queue -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-list-music text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Fila de Reprodução Inteligente</h4>
+                    <p class="text-gray-400">Monte sua sequência de áudios para sessões de estudo ou treino. O TapAudio se torna seu DJ pessoal.</p>
+                </div>
+                <!-- Feature 3: Data Saving -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-signal-stream text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Economia de Dados</h4>
+                    <p class="text-gray-400">Ao extrair apenas o áudio, o app consome muito menos do seu plano de internet. Ouça mais, gaste menos.</p>
+                </div>
+                <!-- Feature 4: Playlists -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-save text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Salve Suas Playlists</h4>
+                    <p class="text-gray-400">Gostou de uma sequência? Salve-a como uma playlist e ouça de novo quando quiser. Suas mixagens favoritas, sempre à mão.</p>
+                </div>
+                <!-- Feature 5: Speed Control -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-gauge-high text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Controle de Velocidade</h4>
+                    <p class="text-gray-400">Acelere aulas para otimizar o tempo ou desacelere para entender um novo idioma. Você no controle do ritmo.</p>
+                </div>
+                <!-- Feature 6: How it Works -->
+                <div class="feature-card p-8 rounded-xl">
+                    <i class="fas fa-share-nodes text-3xl gradient-text mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Como Funciona?</h4>
+                    <p class="text-gray-400">Em qualquer app de vídeo, use a função "Compartilhar" e escolha o TapAudio. Simples assim. O áudio começa a tocar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section id="download" class="py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-extrabold">Liberte o áudio. <br>Baixe o TapAudio agora.</h3>
+            <p class="mt-4 text-lg text-gray-400">Disponível gratuitamente na Google Play Store.</p>
+            <div class="mt-8">
+                <a href="https://play.google.com/store/apps/details?id=net.glaucomv.tapaudio" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
+                    <i class="fab fa-google-play mr-2"></i> Instalar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#181818] py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 TapAudio. Desenvolvido por ByteFlow Studios.</p>
+            <div class="mt-4">
+                <a href="politica-de-privacidade.html" class="hover:text-indigo-400 transition-colors">Política de Privacidade</a>
+                <span class="mx-2">|</span>
+                <a href="mailto:glaucodev01@gmail.com" class="hover:text-indigo-400 transition-colors">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
