@@ -4,97 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - TapAudio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
         }
         h1, h2, h3 {
-            color: #111;
+            font-weight: 700;
         }
-        h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+        p, li {
+            color: #A0A0A0;
+            line-height: 1.7;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
+        strong {
+            color: #E0E0E0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Política de Privacidade do TapAudio</h1>
-        <p><em>Última atualização: 1 de julho de 2025</em></p>
-        
-        <p>Esta Política de Privacidade descreve como o aplicativo TapAudio ("nós", "nosso" ou "o aplicativo") lida com suas informações quando você utiliza nosso serviço. Sua privacidade é importante para nós, e estamos comprometidos em protegê-la.</p>
-        <p>Ao usar o TapAudio, você concorda com a coleta e uso de informações de acordo com esta política.</p>
 
-        <h2>1. Informações que Coletamos</h2>
-        <p>O TapAudio opera com um princípio de privacidade em primeiro lugar, coletando o mínimo de informações necessárias para fornecer sua funcionalidade principal.</p>
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="fas fa-headphones-simple text-3xl text-indigo-500"></i>
+                <h1 class="text-2xl font-bold ml-3">TapAudio</h1>
+            </div>
+            <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i> Voltar
+            </a>
+        </div>
+    </header>
 
-        <h3>Informações Fornecidas Diretamente pelo Usuário:</h3>
-        <ul>
-            <li><strong>URLs de Mídia:</strong> Quando você "compartilha" um link com o TapAudio, o aplicativo recebe e processa essa URL para extrair o conteúdo de áudio.</li>
-            <li><strong>Caminhos de Arquivos Locais:</strong> Quando você compartilha um arquivo de vídeo do seu dispositivo, o aplicativo recebe o caminho do arquivo para acessá-lo e reproduzir o áudio. O TapAudio não escaneia seu dispositivo; ele apenas acessa os arquivos que você escolhe explicitamente compartilhar com ele.</li>
-        </ul>
+    <!-- Privacy Policy Content -->
+    <main class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold mb-4">Política de Privacidade do TapAudio</h1>
+            <p class="text-gray-400 mb-10">Última atualização: 9 de julho de 2025</p>
 
-        <h3>Metadados de Mídia (Coletados a partir do Conteúdo):</h3>
-        <ul>
-            <li>Para fornecer uma experiência de usuário rica, o aplicativo extrai metadados relacionados ao conteúdo que você compartilha. Isso inclui o título do vídeo, nome do autor/canal e URL da imagem de miniatura (thumbnail).</li>
-            <li>No caso de arquivos locais, o aplicativo gera uma miniatura a partir do seu arquivo de vídeo, que fica armazenada localmente no seu dispositivo.</li>
-        </ul>
+            <div class="space-y-8">
+                <section>
+                    <p>Esta Política de Privacidade descreve como o aplicativo TapAudio ("nós", "nosso" ou "o aplicativo") lida com suas informações quando você utiliza nosso serviço. Sua privacidade é importante para nós, e estamos comprometidos em protegê-la. Ao usar o TapAudio, você concorda com a coleta e uso de informações de acordo com esta política.</p>
+                </section>
 
-        <h3>Histórico de Reprodução (Armazenado Localmente):</h3>
-        <ul>
-            <li>O aplicativo salva um histórico das últimas 10 mídias que você ouviu. Essas informações são salvas <strong>exclusivamente no armazenamento local do seu dispositivo</strong>.</li>
-            <li>Este histórico não é transmitido, compartilhado ou armazenado em nenhum servidor externo.</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">1. Informações que Coletamos</h2>
+                    <p>O TapAudio opera com um princípio de privacidade em primeiro lugar, coletando o mínimo de informações necessárias para fornecer sua funcionalidade principal.</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><strong>Informações Fornecidas Diretamente pelo Usuário:</strong> Quando você "compartilha" um link ou um arquivo de vídeo local com o TapAudio, o aplicativo recebe e processa essa URL ou caminho de arquivo para extrair o conteúdo de áudio. O TapAudio não escaneia seu dispositivo; ele apenas acessa os arquivos que você escolhe explicitamente compartilhar com ele.</li>
+                        <li><strong>Metadados de Mídia (Coletados a partir do Conteúdo):</strong> Para fornecer uma experiência de usuário rica, o aplicativo extrai metadados como título do vídeo, nome do autor/canal e URL da imagem de miniatura (thumbnail).</li>
+                        <li><strong>Histórico e Playlists (Armazenados Localmente):</strong> O aplicativo salva um histórico das mídias que você ouviu, bem como suas filas de reprodução e playlists salvas. Todas essas informações são salvas <strong>exclusivamente no armazenamento local do seu dispositivo</strong> e não são transmitidas ou compartilhadas.</li>
+                    </ul>
+                </section>
 
-        <h2>2. Como Usamos as Informações</h2>
-        <p>As informações coletadas são usadas estritamente para os seguintes propósitos:</p>
-        <ul>
-            <li>Fornecer o serviço principal de extrair e reproduzir áudio.</li>
-            <li>Melhorar a interface do usuário com informações relevantes (título, arte, etc.).</li>
-            <li>Manter um histórico local para sua conveniência.</li>
-            <li>Manter a reprodução ativa, impedindo que o dispositivo entre em modo de suspensão.</li>
-        </ul>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">2. Como Usamos as Informações</h2>
+                    <p>As informações coletadas são usadas estritamente para os seguintes propósitos:</p>
+                     <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li>Fornecer o serviço principal de extrair e reproduzir áudio.</li>
+                        <li>Melhorar a interface do usuário com informações relevantes (título, arte, etc.).</li>
+                        <li>Manter um histórico local e playlists para sua conveniência.</li>
+                        <li>Manter a reprodução ativa, impedindo que o dispositivo entre em modo de suspensão.</li>
+                    </ul>
+                </section>
 
-        <h2>3. Compartilhamento de Informações</h2>
-        <p>Nós não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros. As únicas interações são as requisições feitas à APIs públicas usando a URL que você fornece.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">3. Compartilhamento de Informações</h2>
+                    <p>Nós não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros. As únicas interações com a internet são as requisições feitas às APIs públicas (como a do YouTube) usando a URL que você fornece, para obter os metadados e o stream de áudio.</p>
+                </section>
 
-        <h2>4. Segurança</h2>
-        <p>A segurança de suas informações é uma prioridade. Como os dados sensíveis (seu histórico) são mantidos localmente, o risco de exposição é significativamente reduzido. Ainda assim, nenhum método de armazenamento é 100% seguro.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">4. Segurança</h2>
+                    <p>A segurança de suas informações é uma prioridade. Como os dados sensíveis (seu histórico e playlists) são mantidos localmente, o risco de exposição é significativamente reduzido. Ainda assim, nenhum método de armazenamento é 100% seguro.</p>
+                </section>
 
-        <h2>5. Privacidade Infantil</h2>
-        <p>Nosso serviço não se destina a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">5. Privacidade Infantil</h2>
+                    <p>Nosso serviço não se destina a menores de 13 anos. Não coletamos intencionalmente informações de identificação pessoal de crianças.</p>
+                </section>
 
-        <h2>6. Alterações a esta Política de Privacidade</h2>
-        <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Aconselhamos que você revise esta página periodicamente.</p>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">6. Alterações a esta Política de Privacidade</h2>
+                    <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Aconselhamos que você revise esta página periodicamente para quaisquer alterações.</p>
+                </section>
 
-        <h2>7. Contato</h2>
-        <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco pelo e-mail: <a href="mailto:glaucodev01@gmail.com">glaucodev01@gmail.com</a></p>
-    </div>
+                <section>
+                    <h2 class="text-2xl font-bold mb-3">7. Contato</h2>
+                    <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco pelo e-mail: <a href="mailto:glaucodev01@gmail.com" class="text-indigo-400 hover:underline">glaucodev01@gmail.com</a></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#181818] py-8 mt-16">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 TapAudio. Desenvolvido por ByteFlow Studios.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
